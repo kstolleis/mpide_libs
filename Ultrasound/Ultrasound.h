@@ -16,21 +16,17 @@
 class Ultrasound
 {
 	public:
-		//Constructors
+
 		Ultrasound();
-		Ultrasound(byte us_trigger, byte us_echo);
+		Ultrasound(byte triggerIn, byte echoIn);
 		
 		//Functions
-		bool collision_detection(float boundry);
-		float distance();
-		
-		//Legacy Functions
-		//int swDistance();
-		//long microsecondsToCentimeters(long microseconds);
+		bool collisionDetection(float boundary);
+		int distance();
 	
 	private:
 		//Variables
-		byte _us_trigger, _us_echo;
+		byte usTrigger, usEcho;
 };
 
 #endif
